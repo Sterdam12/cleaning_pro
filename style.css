@@ -53,9 +53,10 @@ h4 {
 }
 
 header {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header__inner {
@@ -127,11 +128,9 @@ header {
 
 .main__header {
     padding-top: 10px;
-    padding-bottom: 76px;
 }
 
 .nav__main {
-    margin-bottom: 40px;
 }
 
 .nav__main a {
@@ -225,7 +224,14 @@ header {
     left: 0;
     align-self: anchor-center;
 }
-
+.first_screen{
+    background-image: url(./assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 550px;
+    padding-top: 153px;
+}
 /* ДОЛЖНА БЫТЬ ФОРМА */
 .advantage {
     margin-top: -36px;
@@ -653,7 +659,7 @@ tbody tr:nth-child(odd) {
     font-size: 10px;
 }
 
-.cellar__info h6 {}
+
 
 .menu__cellar {
     display: grid;
@@ -744,7 +750,7 @@ tbody tr:nth-child(odd) {
     border-bottom: 1px solid #8A8A8A;
 }
 .contact_block{
-    padding: 0 0 80px 0;
+    padding: 150px 0 80px 0;
 }
 .contact_block .container{
     gap:20px;
@@ -752,7 +758,7 @@ tbody tr:nth-child(odd) {
     grid-template-columns: 1fr 1fr;
 }
 .contact_block h1 {
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 700;
     font-size: 52px;
     line-height: 58px;
@@ -761,7 +767,7 @@ tbody tr:nth-child(odd) {
 }
 
 .contact_block .subtitle {
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -770,7 +776,7 @@ tbody tr:nth-child(odd) {
 }
 
 .phone_link {
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -781,21 +787,19 @@ tbody tr:nth-child(odd) {
 }
 
 .contact_block p {
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 12px;
     display: block;
-    line-height: 100%;
     color: #2D2D2D;
 }
 
 .mail_link {
     margin-bottom: 25px;
     margin-top: 25px;
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 100%;
     color: #2D2D2D;
     display: block;
 }
@@ -809,7 +813,7 @@ tbody tr:nth-child(odd) {
 .soc_container a{
     display: flex;
     gap: 12px;
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-decoration: underline;
@@ -826,13 +830,12 @@ tbody tr:nth-child(odd) {
     height: auto;
 }
 
-.location {
+.contact_block .location {
     display: flex;
     gap: 12px;
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 100%;
     color: #2D2D2D;
     margin-bottom: 10px;
     align-items: center;
@@ -844,7 +847,7 @@ tbody tr:nth-child(odd) {
     height: auto;
 }
 .location_info{
-    font-family: Wix Madefor Display;
+    font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color:#2D2D2D;
@@ -854,7 +857,53 @@ tbody tr:nth-child(odd) {
     overflow: hidden;
     border-radius:10px ;
     box-shadow: 0px 25px 50px 0px #0000001A;
+    height: 100%;
 }
 iframe{
     display: block;
+}
+.contact_block__form{
+    margin-top: 30px;
+    display: flex;
+    gap:5px;
+}
+.contact_block__form #name{
+    color:#8A8A8A;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 208px;
+    width: -webkit-fill-available;
+}
+
+.contact_block__form #phone{
+    color:#8A8A8A;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 208px;
+    width: -webkit-fill-available;
+}
+.contact_block__form button{
+    color: #2D2D2D;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F6B500;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }

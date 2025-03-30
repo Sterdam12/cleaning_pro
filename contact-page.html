@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="wrapper">
             <div class="header__inner">
                 <nav class="nav">
                     <div class="nav__left">
@@ -201,32 +201,41 @@
     </header>
     <main>
         <section class="contact_block">
-            <div class="container">
-                <div class="contact_block__item">
-                    <h1>Контакты</h1>
-                    <div class="subtitle">Клининговая компания «Клининг Проф»</div>
-                    <a class="phone_link" href="tel:+78122142427">+7 (812) 214-24-27</a>
-                    <p>Заявки принимаются с 9:00 до 21:00</p>
-                    <a class="mail_link" href="mailtto:почта@mail.ru">почта@mail.ru</a>
-                    <div class="soc_container">
-                        <a href="/">Написать в Whatsapp
-                            <img src="./assets/icon/whatsapp_green__icon.svg">
-                        </a>
-                        <a href="/">Написать в Telegram
-                            <img src="./assets/icon/telegram_blue__icon.svg">
-                        </a>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="contact_block__item">
+                        <h1>Контакты</h1>
+                        <div class="subtitle">Клининговая компания «Клининг Проф»</div>
+                        <a class="phone_link" href="tel:+78122142427">+7 (812) 214-24-27</a>
+                        <p>Заявки принимаются с 9:00 до 21:00</p>
+                        <a class="mail_link" href="mailtto:почта@mail.ru">почта@mail.ru</a>
+                        <div class="soc_container">
+                            <a href="/">Написать в Whatsapp
+                                <img src="./assets/icon/whatsapp_green__icon.svg">
+                            </a>
+                            <a href="/">Написать в Telegram
+                                <img src="./assets/icon/telegram_blue__icon.svg">
+                            </a>
+                        </div>
+                        <div class="location">
+                            <img src="./assets/icon/location_blue__icon.svg">
+                            г. Санкт-Петербург, проспект Энгельса, 27
+                        </div>
+                        <div class="location_info">Территориальное обслуживание:<br>
+                            Санкт-Петербург и Ленинградская область
+                        </div>
+                        <div class="contact_block__form">
+                            <input id="name" placeholder="Ваше имя">
+                            <input id="phone" placeholder="+7 (999) 999-99-99">
+                            <button>Заказать звонок</button>
+                        </div>
                     </div>
-                    <div class="location">
-                        <img src="./assets/icon/location_blue__icon.svg">
-                        г. Санкт-Петербург, проспект Энгельса, 27
-                    </div>
-                    <div class="location_info">Территориальное обслуживание:<br>
-                        Санкт-Петербург и Ленинградская область
-                    </div>
-                </div>
-                <div class="contact_block__item">
-                    <div class="contact_block__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d7d2292e354715fa86cfacfba11f4b6f787fb0281301acd55bd5005aa9d1b20&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                    <div class="contact_block__item">
+                        <div class="contact_block__map">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d7d2292e354715fa86cfacfba11f4b6f787fb0281301acd55bd5005aa9d1b20&amp;source=constructor"
+                                width="100%" height="100%" frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,9 +248,10 @@
                     <div class="cellar__info">
                         <img src="./assets/img/logo.png" alt="">
                         <h6>Информация на сайте не является публичной офертой.</h6>
-                        <p>Обращаем ваше внимание на то, что данный интернет-сайт, а также вся информация об услугах и ценах, 
-                            предоставленная на нем, носит исключительно информационный характер и 
-                            ни при каких условиях не является публичной офертой, определяемой 
+                        <p>Обращаем ваше внимание на то, что данный интернет-сайт, а также вся информация об услугах и
+                            ценах,
+                            предоставленная на нем, носит исключительно информационный характер и
+                            ни при каких условиях не является публичной офертой, определяемой
                             положениями Статья 437 Гражданского Кодекса РФ.
                         </p>
                     </div>
@@ -388,7 +398,7 @@
                                 <img src="./assets/img/loc.svg" alt="">
                                 <p>Санкт-Петербург и область</p>
                             </div>
-                            <p>Территориальное обслуживание: 
+                            <p>Территориальное обслуживание:
                                 Санкт-Петербург и Ленинградская область
                             </p>
                         </div>
