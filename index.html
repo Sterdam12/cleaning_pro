@@ -202,8 +202,8 @@
     <main class="main">
         <section class="first_screen">
             <div class="wrapper">
-                <h1 class="title">Услуги клининга<p>от 75 руб./м2</p>
-                </h1>
+                <h1 class="title">Услуги клининга</h1>
+                <p class="under__title">от 75 руб./м2</p>
                 <div class="header__info">
                     <div class="header__info-item">Более 65 человек в штате</div>
                     <div class="header__info-item">Выезд в любую точку СПб за 90 мин.</div>
@@ -251,7 +251,7 @@
                         <a href="#" class="services__button">Перейти</a>
                     </div>
                     <div class="services__content right">
-                        <h2>Услуги уборки после ремонта</h2>
+                        <h2>Уборка <br>квартир</h2>
                         <p>Таким образом, понимание сути ресурсосберегающих технологий не оставляет шанса для
                             приоретизации разума над эмоциями. Идейные соображения высшего порядка,
                             а также высокотехнологичная концепция общественного уклада требует определения и уточнения
@@ -446,8 +446,8 @@
                     <div class="stage__inner-item">
                         <p class="stage__number">01</p>
                         <div class="stage__text">
-                            <h4>Заявка на сайте или звонок</h4>
-                            <p>+7 (812) 214-24-27</p>
+                            <h4 class="stage__subtitle">Заявка на сайте или звонок</h4>
+                            <p class="stage__phone">+7 (812) 214-24-27</p>
                             <p>Мы делаем предварительный расчет стоимости по телефону.
                                 Согласовываем удобную для вас дату и время
                             </p>
@@ -460,7 +460,6 @@
                             <p>К вам приезжает прошедший обучение и контроль
                                 службы безопасности клинер нашей компании
                             </p>
-
                         </div>
                     </div>
                     <div class="stage__inner-item">
@@ -498,7 +497,24 @@
                 </div>
             </div>
         </section>
-        <h2>ФОРМА</h2>
+        <section class="consultation">
+            <div class="wrapper">
+                <div class="consultation__inner">
+                    <div class="consultation__title">
+                        <h2>Получите бесплатную консультацию нашего менеджера</h2>
+                        <div class="consultation__form">
+                            <input type="text" id="name" placeholder="Ваше имя">
+                            <input type="text" id="phone" placeholder="+7 (999) 999-99-99">
+                            <button>Получить расчет и скидку</button>
+                        </div>
+                        <p>Нажимая кнопку, вы даете согласие на обработку персональных данных</p>
+                    </div>
+                    <div class="consultation__img">
+                        <img src="./assets/img/clear.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="slider__services">
             <div class="wrapper">
                 <h2>Что входит в уборку?</h2>
@@ -521,37 +537,67 @@
         </section>
         <h2>КАЛЬКУЛЯТОР</h2>
         <section class="board">
-            <div class="wraper">
+            <div class="wrapper">
                 <h2>Гордимся своими сотрудниками</h2>
                 <div class="board__inner">
-                    <div class="board__inner-left">
+                    <div class="board__inner-top">
                         <div class="board__inner-title">
-                            <h4>В нашем штате более <span>70 клинеров</span>
+                            <h4>В нашем штате более <span>70 клинеров.</span>
                                 Мы работаем по всему Санкт-Петербургу и Ленинградской области.
                             </h4>
                             <p>Все клинеры нашей компании:</p>
                             <ul class="board__menu">
-                                <li class="board__menu-item">Прошли специальную проверку</li>
-                                <li class="board__menu-item">1 раз в год проходят повышение квалификации</li>
-                                <li class="board__menu-item">Имеют стаж работы от пяти лет </li>
+                                <li class="board__menu-item"><img src="./assets/img/check_list.svg" alt="">Прошли специальную проверку</li>
+                                <li class="board__menu-item"><img src="./assets/img/check_list.svg" alt="">1 раз в год проходят повышение квалификации</li>
+                                <li class="board__menu-item"><img src="./assets/img/check_list.svg" alt="">Имеют стаж работы от пяти лет </li>
                             </ul>
                         </div>
-                        <div class="board__inner-text">
-                            <p>Мы предлагаем все виды уборок, поэтому в
-                                работе используем профессиональную технику и средства:
-                            </p>
+                        <div class="board__inner-slider">
+                            <img src="./assets/img/bord1.png" alt="">
+                            <img src="./assets/img/bord1.png" alt="">
+                            <img src="./assets/img/bord1.png" alt="">
                         </div>
                     </div>
-                    <div class="board__inner-slider">
-                        <img src="./assets/img/bord1.png" alt="">
-                        <img src="./assets/img/bord1.png" alt="">
-                        <img src="./assets/img/bord1.png" alt="">
+                    <div class="board__inner-bottom">
+                        <p>Мы предлагаем все виды уборок, поэтому в 
+                            работе <br> используем профессиональную технику и средства:
+                        </p>
+                        <div class="board__inner-example">
+                            <div class="board__inner-example-inner">
+                                <div class="board__inner-example-text">
+                                    <h4>Профессиональные моющие пылесосы</h4>
+                                    <p>Компактный, но достаточно мощный, чтобы убрать грязь и пыль</p>
+                                </div>
+                                <img src="./assets/img/example1.png" alt="">
+                            </div>
+                            <div class="board__inner-example-inner">
+                                <div class="board__inner-example-text">
+                                    <h4>Профессиональные парогенераторы</h4>
+                                    <p>Для удаления застарелых загрязнений, а также для борбьы с микробами</p>
+                                </div>
+                                <img src="./assets/img/example2.png" alt="">
+                            </div>
+                            <div class="board__inner-example-inner">
+                                <div class="board__inner-example-text">
+                                    <h4>Роторные машины</h4>
+                                    <p>Машины для всех типов покрытий с функциями мойки, сушки и полировки</p>
+                                </div>
+                                <img src="./assets/img/example3.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <h2>ОТЗЫВЫ</h2>
         <h2>ВЫПОЛНЕННЫЕ РАБОТЫ</h2>
+        <section class="faq">
+            <div class="wrapper">
+                <div class="faq__inner">
+                    
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="cellar">
