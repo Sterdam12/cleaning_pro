@@ -1487,7 +1487,6 @@ iframe {
     background: #999999;
 }
 
-
-.wadaw{
-    margin-bottom: 2px;
+#price_qwiz5 .price_qwiz__title {
+    max-width: 270px;
 }
