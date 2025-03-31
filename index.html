@@ -265,7 +265,7 @@
         <section class="price_qwiz">
             <div class="wrapper">
                 <h2>Рассчитайте цену уборки <span class="title_yellow">за 4 шага</span></h2>
-                <div class="price_qwiz__container">
+                <div class="price_qwiz__container" id="price_qwiz1">
                     <div class="price_qwiz__left">
                         <div class="price_qwiz_number"><span>1 шаг</span> из 4</div>
                         <div class="price_qwiz__title">Какой тип уборки требуется?</div>
@@ -284,7 +284,7 @@
                                 <div class="price_qwiz_image">
                                     <img src="/assets/img/da5a155a2a292172b9af8c34f534631a.jpg">
                                     <div class="input_selected">
-                                        <input type="radio" name="quiz-option" class="real-radio" value="1">
+                                        <input type="radio" name="quiz-option-1" class="real-radio" value="1" checked>
                                         <span class="custom-radio"></span>
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@
                                 <div class="price_qwiz_image">
                                     <img src="/assets/img/0d0b22a931b7dd9baf7b29aa431a0b28.jpg">
                                     <div class="input_selected">
-                                        <input type="radio" name="quiz-option" class="real-radio" value="1">
+                                        <input type="radio" name="quiz-option-1" class="real-radio" value="1">
                                         <span class="custom-radio"></span>
                                     </div>
                                 </div>
@@ -304,7 +304,7 @@
                                 <div class="price_qwiz_image">
                                     <img src="/assets/img/926a6a1e7e680e1f17e53b7707e5efbe.jpg">
                                     <div class="input_selected">
-                                        <input type="radio" name="quiz-option" class="real-radio" value="1">
+                                        <input type="radio" name="quiz-option-1" class="real-radio" value="1">
                                         <span class="custom-radio"></span>
                                     </div>
                                 </div>
@@ -314,13 +314,167 @@
                                 <div class="price_qwiz_image">
                                     <img src="/assets/img/da5a155a2a292172b9af8c34f534631a.jpg">
                                     <div class="input_selected">
-                                        <input type="radio" name="quiz-option" class="real-radio" value="1">
+                                        <input type="radio" name="quiz-option-1" class="real-radio" value="1">
                                         <span class="custom-radio"></span>
                                     </div>
                                 </div>
                                 Помыть окна
                             </label>
                         </div>
+                    </div>
+                </div>
+                <div class="price_qwiz__container" id="price_qwiz2">
+                    <div class="price_qwiz__left">
+                        <div class="price_qwiz_number"><span>2 шаг</span> из 4</div>
+                        <div class="price_qwiz__title">Выберете вид помещения</div>
+                        <div class="price_qwiz__navigate">
+                            <div id="price_qwiz_prev" class="price_qwiz__button">
+                                Назад
+                            </div>
+                            <div id="price_qwiz_next" class="price_qwiz__button">
+                                Следующий вопрос
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_qwiz__right">
+                        <div class="custom-radio-group">
+                            <label class="price_qwiz__selectimg">
+                                <div class="price_qwiz_image">
+                                    <img src="/assets/img/da5a155a2a292172b9af8c34f534631a.jpg">
+                                    <div class="input_selected">
+                                        <input type="radio" name="quiz-option-2" class="real-radio" value="1" checked>
+                                        <span class="custom-radio"></span>
+                                    </div>
+                                </div>
+                                Квартира
+                            </label>
+                            <label class="price_qwiz__selectimg">
+                                <div class="price_qwiz_image">
+                                    <img src="/assets/img/0d0b22a931b7dd9baf7b29aa431a0b28.jpg">
+                                    <div class="input_selected">
+                                        <input type="radio" name="quiz-option-2" class="real-radio" value="1">
+                                        <span class="custom-radio"></span>
+                                    </div>
+                                </div>
+                                Дом или коттедж
+                            </label>
+                            <label class="price_qwiz__selectimg">
+                                <div class="price_qwiz_image">
+                                    <img src="/assets/img/926a6a1e7e680e1f17e53b7707e5efbe.jpg">
+                                    <div class="input_selected">
+                                        <input type="radio" name="quiz-option-2" class="real-radio" value="1">
+                                        <span class="custom-radio"></span>
+                                    </div>
+                                </div>
+                                Офис
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price_qwiz__container" id="price_qwiz3">
+                    <div class="price_qwiz__left">
+                        <div class="price_qwiz_number"><span>3 шаг</span> из 4</div>
+                        <div class="price_qwiz__title">Укажите площадь помещения</div>
+                        <div class="price_qwiz__navigate">
+                            <div id="price_qwiz_prev" class="price_qwiz__button">
+                                Назад
+                            </div>
+                            <div id="price_qwiz_next" class="price_qwiz__button">
+                                Следующий вопрос
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_qwiz__right">
+                        <div class="range-slider">
+                            <div class="slider-container">
+                                <div class="slider-line"></div>
+                                <input type="range" min="30" max="500" value="100" class="slider-r" id="areaSlider">
+                                <div class="slider-thumb"></div>
+                            </div>
+                            <span>30 м²</span>
+                            <input type="number" min="30" max="500" value="100" class="slider-input" id="areaInput">
+                            <span>500 м²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price_qwiz__container" id="price_qwiz4">
+                    <div class="price_qwiz__left">
+                        <div class="price_qwiz_number"><span>4 шаг</span> из 4</div>
+                        <div class="price_qwiz__title">Выберете доп. услуги</div>
+                        <div class="price_qwiz__navigate">
+                            <div id="price_qwiz_prev" class="price_qwiz__button">
+                                Назад
+                            </div>
+                            <div id="price_qwiz_next" class="price_qwiz__button">
+                                Следующий вопрос
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_qwiz__right">
+                        <div class="checkbox-group">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть окна</span>
+                            </label>
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Вымыть лоток питомца</span>
+                            </label>
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть люстру</span>
+                            </label>
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Погладить одежду</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть холодильник изнутри</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть посуду</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть СВЧ изнутри</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" hidden>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Помыть мебель</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price_qwiz__container" id="price_qwiz5">
+                    <div class="price_qwiz__left">
+                        <div class="price_qwiz__title">Заполните контакты,
+                            чтобы мы смогли с вами
+                            связаться
+                        </div>
+                        <div class="price_qwiz__navigate">
+                            <div id="price_qwiz_prev" class="price_qwiz__button">
+                                Назад
+                            </div>
+                            <div id="price_qwiz_next" class="price_qwiz__button">
+                                Следующий вопрос
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_qwiz__right">
+
                     </div>
                 </div>
             </div>
@@ -728,6 +882,7 @@
         </section>
     </footer>
     <script src="./main.js"></script>
+    <script src="./slider_qviz.js"></script>
 </body>
 
 </html>
