@@ -45,7 +45,12 @@ h4 {
     padding: 0px;
     margin: 0px;
 }
-
+h2{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color:#2D2D2D; 
+}
 .wrapper {
     width: 100%;
     max-width: 1180px;
@@ -178,7 +183,9 @@ header {
 .sub__menu:hover {
     display: block;
 }
-
+h2 .title_yellow{
+    color:#F6B500;
+}
 .title {
     font-weight: 700;
     font-size: 52px;
@@ -906,4 +913,121 @@ iframe{
     background-color: #F6B500;
     padding: 10px 20px;
     box-sizing: border-box;
+}
+.price_qwiz{
+    padding: 80px 0;
+}
+.price_qwiz h2{
+    text-align: center;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+.price_qwiz__container{
+    margin-top: 40px;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+}
+.price_qwiz__right{
+    max-width: 780px;
+}
+.custom-radio-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.price_qwiz__right img{
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 25px 50px 0px #0000001A;
+}
+.price_qwiz__selectimg{
+    text-align: center;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:#2D2D2D;
+}
+.price_qwiz_number{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    color:#2D2D2D;
+    margin-bottom: 15px;
+}
+.price_qwiz_number span{
+    color:#0D84D4;
+}
+.price_qwiz__title{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:#2D2D2D;
+    margin-bottom: 20px;
+}
+.price_qwiz__navigate{
+    display: flex;
+    gap:10px;
+}
+.price_qwiz__button{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+#price_qwiz_prev{
+    color:#2D2D2D;
+    border: 1px solid #0D84D4;
+}
+#price_qwiz_next{
+    background-color:#0D84D4;
+    color:white;
+}
+.real-radio {
+    /* Прячем настоящий radio, но оставляем доступным для формы */
+    position: absolute;
+    opacity:0;
+  }
+  
+  .custom-radio {
+    width: 28px;         /* Большой круг */
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box; /* Учитываем границу в размерах */
+  }
+  
+  .real-radio:checked + .custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;         /* Большая синяя точка */
+    height: 16px;
+    background: #2196F3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Идеальное центрирование */
+  }
+
+  
+  /* Эффект при наведении */
+  .custom-radio-label:hover .custom-radio {
+    border-color: #999;
+  }
+.input_selected{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.price_qwiz_image{
+    position: relative;
 }
