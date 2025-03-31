@@ -1491,17 +1491,12 @@ iframe {
     max-width: 270px;
 }
 
-.Tea1{
 
+
+.Tea1 {
+    max-width: 270px;
 }
 
-
-.Tea2{
-
-}
-
-
-
-.Tea3{
-    
+.Tea1 {
+    background: #999999;
 }
