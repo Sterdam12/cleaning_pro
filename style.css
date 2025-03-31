@@ -1,15 +1,7 @@
 html {
     box-sizing: border-box;
 }
-h2{
-    color: red;
-}
-h3{
-    color:red;
-}
-h1{
-    font-size: 25px;
-}
+
 *,
 *::after,
 *::before {
