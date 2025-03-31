@@ -137,9 +137,6 @@ header {
     padding-top: 10px;
 }
 
-.nav__main {
-}
-
 .nav__main a {
     font-weight: 400;
     font-size: 14px;
@@ -574,7 +571,7 @@ tbody tr:nth-child(odd) {
 }
 
 .consultation__title {
-    padding-leftZ: 65px;
+    padding-left: 65px;
 }
 
 .consultation__title h2 {
