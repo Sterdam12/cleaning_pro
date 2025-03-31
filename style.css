@@ -530,7 +530,7 @@ tbody tr:nth-child(odd) {
 }
 
 .slider__services {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .slider__services h2 {
@@ -555,15 +555,22 @@ tbody tr:nth-child(odd) {
     border-radius: 10px;
     border: 1px solid #0D84D4;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     background: #fff;
     cursor: pointer;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+.slider__tab.active {
+    background-color:  #0D84D4;
+    color:white;
 }
 
-.slider__img {
-    display: none;
+.tabs_slider__img{
     width: 100%;
     object-fit: cover;
+    display: block;
+    max-height: 580px;
+    border-radius: 10px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
 }
 
@@ -589,8 +596,83 @@ tbody tr:nth-child(odd) {
     flex-direction: column;
     justify-content: space-between;
 }
+.slider__services .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.slider__services .swiper-slide{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.swiper {
+    position: relative;
+    width: 100%;
+    max-width: 980px; /* Подстрой под свои размеры */
+    margin: 0 auto;
+}
+
+.slider__services .swiper-button-prev,
+.slider__services .swiper-button-next {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: 1px solid #DADADA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-self: center;
+}
 
 
+.swiper-wrapper-container{
+    display: flex;
+    gap:20px;
+}
+
+
+.slider__services .swiper-pagination {
+    position: absolute;
+    bottom: -30px; /* Опускаем пагинацию */
+    text-align: center;
+    width: 100%;
+}
+.slider__services .swiper-button-prev{
+    left: 0;
+}
+.slider__services .swiper-button-next{
+    right: 0;
+}
+
+.slider__services .swiper-button-prev svg{
+    height: 12px;
+    width: 14px;
+}
+.slider__services .swiper-button-next svg{
+    height: 12px;
+    width: 14px;
+}
+
+
+.slider__services .swiper-button-prev:after{
+    content: "none";
+}
+.slider__services .swiper-button-next:after{
+    content: "none";
+}
+.slider__services .swiper-pagination{
+    bottom: 0!important;
+}
+.swiper-1{
+    padding-bottom: 40px!important;
+}
+.swiper-2{
+    padding-bottom: 40px!important;
+}
 
 
 
