@@ -1488,6 +1488,9 @@ iframe {
 }
 
 #price_qwiz5 .price_qwiz__title {
-    max-width: 270px;
+    max-width: 275px;
 }
 
+.add{
+    background-color: red;
+}
