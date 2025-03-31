@@ -1490,21 +1490,9 @@ iframe {
 #price_qwiz5 .price_qwiz__title {
     max-width: 270px;
 }
-.test{
-
-}
-<<<<<<< HEAD
-.test1{
-=======
-
-
-.Tea2{
-
-}
-
-
-
-.Tea3{
->>>>>>> cfd2eda8a0b58357c762b3bc24617b0a7799ed25
-    
+.all__tea{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
