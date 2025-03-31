@@ -1,9 +1,7 @@
 html {
     box-sizing: border-box;
 }
-h1{
-    color:red;
-}
+
 *,
 *::after,
 *::before {
@@ -1489,9 +1487,7 @@ iframe {
     background: #999999;
 }
 
-#price_qwiz5 .price_qwiz__title {
-    max-width: 270px;
-}
+
 .wadaw{
     margin-bottom: 2px;
 }
