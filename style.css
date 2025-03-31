@@ -3,6 +3,12 @@ html {
 }
 h2{
     color: red;
+    
+
+}
+
+h1{
+    font-size: 25px;
 }
 *,
 *::after,
@@ -1490,16 +1496,5 @@ iframe {
 }
 
 #price_qwiz5 .price_qwiz__title {
-    max-width: 275px;
-}
-
-
-.new122{
-    margin-bottom: 5px;
-}
-.tey{
-    margin-bottom: 2px;
-}
-.det{
-    margin-top: 2px;
+    max-width: 270px;
 }
