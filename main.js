@@ -20,3 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showTab(0); // Показываем первую вкладку по умолчанию
 });
+
+ let questionTitle = document.querySelectorAll('.question-title');
+
+ let toggleQuestion = function() {
+    this.classList.toggle('active');
+ }
+
+ questionTitle.forEach(function(title){
+    title.addEventListener('click', toggleQuestion)
+ });
