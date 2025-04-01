@@ -241,13 +241,63 @@ h2 .title_yellow {
     align-self: anchor-center;
 }
 
+.header__form {
+    display: flex;
+    gap: 7px;
+}
+
+.header__form #name {
+    color: #8A8A8A;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 16px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 220px;
+    width: -webkit-fill-available;
+}
+
+.header__form #phone {
+    color: #8A8A8A;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 16px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 220px;
+    width: -webkit-fill-available;
+}
+
+.header__form button {
+    color: #2D2D2D;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F6B500;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
 .first_screen {
     background-image: url(./assets/img/bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    height: 550px;
     padding-top: 153px;
+    padding-bottom: 76px;
 }
 
 /* Р”РћР›Р–РќРђ Р‘Р«РўР¬ Р¤РћР РњРђ */
@@ -613,6 +663,7 @@ tbody tr:nth-child(odd) {
     font-size: 14px;
     text-align: center;
     padding: 16px 15px;
+    outline: none;
     border: 1px solid #DADADA;
     border-radius: 10px;
     text-align: left;
@@ -628,6 +679,7 @@ tbody tr:nth-child(odd) {
     font-size: 14px;
     text-align: center;
     padding: 16px 15px;
+    outline: none;
     border: 1px solid #DADADA;
     border-radius: 10px;
     text-align: left;
@@ -646,6 +698,7 @@ tbody tr:nth-child(odd) {
     background-color: #F6B500;
     padding: 16px 20px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .slider__services {
@@ -819,27 +872,11 @@ tbody tr:nth-child(odd) {
     font-size: 16px;
 }
 
-
-
-
-
-
-
 .board__menu-item {
-
-
-
-
-
-
-
-
-
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
-
 }
 
 .board__inner-slider {
@@ -945,11 +982,6 @@ tbody tr:nth-child(odd) {
     font-weight: 600;
     font-size: 16px;
 }
-
-/* .question-toggle {
-    display: flex;
-    align-items: center;
-} */
 
 .question-content {
     max-height: 0;
@@ -1826,6 +1858,7 @@ iframe {
     background: white;
     border-radius: 10px;
     padding: 16px 15px;
+    outline: none;
     border: 1px solid #DADADA;
     color: #8A8A8A;
     font-size: 14px;
