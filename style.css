@@ -1639,15 +1639,17 @@ iframe {
     opacity: 0;
     cursor: pointer;
 }
-.online_calc_select{
+
+.online_calc_select {
     display: flex;
-    gap:10px;
+    gap: 10px;
     align-items: center;
     font-size: 16px;
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
-    color:#2D2D2D;
+    color: #2D2D2D;
 }
+
 .checkmark::after {
     content: "";
     position: absolute;
@@ -1684,7 +1686,8 @@ iframe {
     pointer-events: none;
     z-index: 2;
 }
-.slider_range_circle1{
+
+.slider_range_circle1 {
     content: " ";
     background: #DADADA;
     width: 8px;
@@ -1694,7 +1697,8 @@ iframe {
     position: absolute;
     top: 16px;
 }
-.slider_range_circle2{
+
+.slider_range_circle2 {
     content: " ";
     background: #DADADA;
     width: 8px;
@@ -1705,83 +1709,95 @@ iframe {
     top: 16px;
 }
 
-.online_calc{
+.online_calc {
     padding-bottom: 80px;
 }
-.online_calc__form{
+
+.online_calc__form {
     display: flex;
-    flex-wrap:wrap;
-    gap:5px;
+    flex-wrap: wrap;
+    gap: 5px;
     align-items: center;
 }
-.online_calc__submit{
+
+.online_calc__submit {
     background: #F6B500;
     border-radius: 10px;
     padding: 16px 20px;
     font-size: 14px;
     font-family: "Wix Madefor Display", sans-serif;
-    color:#2D2D2D;
+    color: #2D2D2D;
     font-weight: 400;
 }
-.online_calc__form input{
+
+.online_calc__form input {
     background: white;
     border-radius: 10px;
     padding: 16px 15px;
-    border:1px solid #DADADA;
-    color:#8A8A8A;
+    border: 1px solid #DADADA;
+    color: #8A8A8A;
     font-size: 14px;
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
 }
-.online_calc__form p{
+
+.online_calc__form p {
     margin-left: 25px;
-    color:#8A8A8A;
+    color: #8A8A8A;
     font-size: 14px;
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
 }
-.online_calc__total{
-    color:#2D2D2D;
+
+.online_calc__total {
+    color: #2D2D2D;
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 30px;
 }
-.online_calc__total span{
-    color:#0D84D4;
+
+.online_calc__total span {
+    color: #0D84D4;
     font-size: 20px;
     font-weight: 700;
 }
-.online_calc h2{
+
+.online_calc h2 {
     text-align: center;
 }
 
-.reviews_block{
+.reviews_block {
     padding: 80px 0;
     background-color: #F7F7F7;
 }
-.reviews_block h2{
+
+.reviews_block h2 {
     text-align: center;
 }
-.reviews_block__container{
+
+.reviews_block__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:20px;
+    gap: 20px;
     padding-top: 40px;
 }
-.reviews_block__item{
+
+.reviews_block__item {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 25px 50px 0px #0000001A;
     height: 400px;
 }
-.reviews_block__item img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+
+.reviews_block__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.reviews_block_play{
+
+.reviews_block_play {
     position: absolute;
     left: 0;
     top: 0;
@@ -1791,94 +1807,108 @@ iframe {
     text-align: center;
     cursor: pointer;
 }
-.reviews_block__container2{
+
+.reviews_block__container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
+    gap: 20px;
     padding-top: 20px;
     position: relative;
 }
-.reviews_block__item2{
+
+.reviews_block__item2 {
     background: white;
     border-radius: 10px;
 }
-.reviews_block__head{
+
+.reviews_block__head {
     padding: 20px 20px 15px 20px;
     border-bottom: 1px solid #DADADA;
     display: flex;
     justify-content: space-between;
 }
 
-.reviews_block_name{
+.reviews_block_name {
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color:#2D2D2D;
+    color: #2D2D2D;
 }
-.reviews_block_number{
+
+.reviews_block_number {
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color:#0D84D4;
+    color: #0D84D4;
     display: flex;
     gap: 7px;
     align-items: center;
 }
+
 .reviews_block_number img:first-child {
     padding-left: 1px;
 }
+
 .reviews_block_number img {
     height: 16px;
     width: auto;
 }
-.reviews_block__item2 p{
+
+.reviews_block__item2 p {
     padding: 15px 40px 20px 20px;
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
+
 .reviews_block .wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
-.reviews_block__container3{
+
+.reviews_block__container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
+    gap: 20px;
     padding-top: 40px;
 }
 
-.reviews_block_service{
+.reviews_block_service {
     display: flex;
     gap: 15px;
     align-items: center;
 }
-#service_left{
+
+#service_left {
     justify-content: right;
     padding-right: 20px;
 }
-.reviews_block_service img{
+
+.reviews_block_service img {
     height: 30px;
     width: auto;
 }
-.reviews_block_quantity{
-   display: flex;
-   align-items: center;
-   gap:4px;
-   color:#232323;
+
+.reviews_block_quantity {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #232323;
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
-.reviews_block_quantity img{
+
+.reviews_block_quantity img {
     height: 12px;
     width: 12px;
 }
-.reviews_block_quantity span{
+
+.reviews_block_quantity span {
     padding-left: 4px;
     border-left: 2px solid #DADADA;
-    color:#8A8A8A;
+    color: #8A8A8A;
     font-family: "Wix Madefor Display", sans-serif;
     font-size: 14px;
     font-weight: 400;
- }
+}
