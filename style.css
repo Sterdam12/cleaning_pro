@@ -1633,3 +1633,200 @@ iframe {
     position: absolute;
     opacity: 0;
 }
+
+.online_calc_select input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.online_calc_select{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    color:#2D2D2D;
+}
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.online_calc_select input:checked~.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #0D84D4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.slider-thumb2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #2196F3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+}
+.slider_range_circle1{
+    content: " ";
+    background: #DADADA;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    left: 0;
+    position: absolute;
+    top: 16px;
+}
+.slider_range_circle2{
+    content: " ";
+    background: #DADADA;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    right: 0;
+    position: absolute;
+    top: 16px;
+}
+
+.online_calc{
+    padding-bottom: 80px;
+}
+.online_calc__form{
+    display: flex;
+    flex-wrap:wrap;
+    gap:5px;
+    align-items: center;
+}
+.online_calc__submit{
+    background: #F6B500;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-family: "Wix Madefor Display", sans-serif;
+    color:#2D2D2D;
+    font-weight: 400;
+}
+.online_calc__form input{
+    background: white;
+    border-radius: 10px;
+    padding: 16px 15px;
+    border:1px solid #DADADA;
+    color:#8A8A8A;
+    font-size: 14px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+}
+.online_calc__form p{
+    margin-left: 25px;
+    color:#8A8A8A;
+    font-size: 14px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+}
+.online_calc__total{
+    color:#2D2D2D;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.online_calc__total span{
+    color:#0D84D4;
+    font-size: 20px;
+    font-weight: 700;
+}
+.online_calc h2{
+    text-align: center;
+}
+
+.reviews_block{
+    padding: 80px 0;
+    background-color: #F7F7F7;
+}
+.reviews_block h2{
+    text-align: center;
+}
+.reviews_block__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding-top: 40px;
+}
+.reviews_block__item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 25px 50px 0px #0000001A;
+    height: 400px;
+}
+.reviews_block__item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.reviews_block_play{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.reviews_block__container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    padding-top: 20px;
+}
+.reviews_block__item2{
+    background: white;
+    border-radius: 10px;
+}
+.reviews_block__head{
+    padding: 20px 20px 15px 20px;
+    border-bottom: 1px solid #DADADA;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_block_name{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:#2D2D2D;
+}
+.reviews_block_number{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:#0D84D4;
+}
+.reviews_block__item2 p{
+    padding: 20px 40px 15px 20px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.reviews_block .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
