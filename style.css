@@ -1354,7 +1354,7 @@ iframe {
 
 .input_selected {
     position: absolute;
-    bottom: 10px;
+    bottom: -16px;
     left: 0;
     right: 0;
 }
@@ -1491,4 +1491,145 @@ iframe {
     max-width: 270px;
 }
 
+.spot_item {
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: #2D2D2D;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+.spot_item:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #0D84D4;
+    display: flex;
+    border-radius: 50%;
+}
+
+#spot_item1 {
+    right: 22%;
+    top: 83px;
+}
+
+#spot_item2 {
+    top: 48%;
+    left: 21%;
+}
+
+#spot_item3 {
+    bottom: 28%;
+    left: 17%;
+}
+
+#spot_item4 {
+    top: 61%;
+    right: 26%;
+}
+
+#spot_item5 {
+    bottom: 4%;
+    left: 13%;
+}
+
+#spot_item1-2 {
+    top: 11%;
+    left: 50%;
+}
+
+#spot_item2-2 {
+    top: 42%;
+    left: 25%;
+}
+
+#spot_item3-2 {
+    bottom: 18%;
+    left: 18%;
+}
+
+#spot_item4-2 {
+    bottom: 20%;
+    left: 47%;
+}
+
+.online_calc__container {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.online_calc__item {
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    background: white;
+    padding: 30px 40px;
+}
+
+.online_calc__title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: "Wix Madefor Display", sans-serif;
+    color: #2D2D2D;
+    font-weight: 700;
+}
+
+.online_calc__item:last-child {
+    grid-column: span 2;
+}
+
+.online_calc_radio {
+    display: flex;
+    gap: 24px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 16px;
+    color: #2D2D2D;
+    font-weight: 600;
+    align-items: center;
+    position: relative;
+}
+
+.online_calc_radio img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 25px 50px 0px #0000001A;
+}
+
+.online_calc_input {
+    position: absolute;
+    left: 45px;
+    align-content: center;
+}
+
+.online_calc_radio__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    row-gap: 15px;
+    align-content: center;
+}
+
+.online-radio:checked+.custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background: #2196F3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.online-radio {
+    position: absolute;
+    opacity: 0;
+}
