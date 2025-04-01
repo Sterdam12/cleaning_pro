@@ -2004,3 +2004,80 @@ iframe {
     font-size: 14px;
     font-weight: 400;
 }
+
+.our_work{
+    padding: 80px 0;
+}
+.our_work h2{
+    text-align: center;
+}
+.our_work_subtitle{
+    text-align: center;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0 40px 0;
+}
+.our_work__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+.our_work__item{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.our_work__image{
+    width: 100%;
+    position: relative;
+    max-height: 272px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+.our_work__image img{
+   height: 100%;
+   object-fit: cover;
+   width: 100%;
+}
+.our_work__tags{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+}
+.our_work__info{
+    padding-top: 20px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:#2D2D2D;
+}
+.our_work__info ul{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.our_work__info ul li{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#2D2D2D;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.our_work__info li img{
+    width:18px ;
+    height: 18px;
+}
+.our_work__tags span{
+    background: #0D84D4;
+    color:white;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 50px;
+    padding:6px 14px ;
+}
