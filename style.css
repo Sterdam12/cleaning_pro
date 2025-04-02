@@ -120,6 +120,20 @@ header {
     gap: 35px;
 }
 
+.menu__btn {
+    display: none;
+    width: 18px;
+    height: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255,255,255, 0);
+}
+
+.menu__btn span{
+    background-color: #2D2D2D;
+    height: 2px;
+    width: 100%;
+}
 
 .button__contact {
     font-weight: 400;
@@ -323,6 +337,7 @@ h2 .title_yellow {
 .header__form {
     display: flex;
     gap: 7px;
+    flex-wrap: wrap;
 }
 
 .header__form #name {
@@ -569,6 +584,7 @@ tbody tr:nth-child(odd) {
     padding-right: 107px;
     padding-left: 50px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -597,6 +613,7 @@ tbody tr:nth-child(odd) {
 .communication__link-whatsapp,
 .communication__link-telega {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -651,12 +668,6 @@ tbody tr:nth-child(odd) {
     font-size: 78px;
     color: #0D84D4;
     line-height: 60px;
-}
-
-.stage__inner-item p {
-    font-weight: 700;
-    font-size: 78px;
-    color: #0D84D4;
 }
 
 .stage__text p {
@@ -748,6 +759,7 @@ tbody tr:nth-child(odd) {
 
 .consultation__form {
     display: flex;
+    flex-wrap: wrap;
     gap: 7px;
     margin-bottom: 20px;
 }
@@ -2467,3 +2479,213 @@ iframe {
     font-weight: 400;
     color: #8A8A8A;
 }
+
+
+
+
+/* Адаптив */
+@media (max-width: 360px) {
+    .wrapper {
+    padding: 0px 24px;
+    }
+    .header__inner{
+        border-bottom: none;
+    }
+    .menu__list,
+    .location,
+    .button__contact,
+    .phone {
+        display: none;
+    }
+    .menu__btn {
+        display: flex;
+    }
+    .contact__inner {
+        gap: 40px;
+    }
+    /* вернуть в бургер меню */
+    .main__header {
+        display: none;
+    }
+    /* вернуть в бургер меню */
+    .first_screen {
+        padding-top: 91px;
+    }
+    .title {
+        font-size: 32px;
+        margin-bottom: 10px;
+        line-height: normal;
+    }
+    .under__title {
+        font-size: 32px;
+    }
+    .header__info-item {
+        text-wrap-style: balance;
+    }
+    .header__form {
+        gap: 10px;
+    }
+    .header__form #name,
+    .header__form #phone,
+    .header__form button {
+        max-width: 312px;
+        width: -webkit-fill-available;
+    }
+    .advantage__inner {
+        gap: 10px;
+    }
+    .services__inner {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .services__content h2 {
+        font-size: 32px;
+        max-width: 294px;
+    }
+    .services__content {
+        padding: 30px 28px 30px 30px;
+        background-position: center;
+    }
+    .services__content p,
+    .services__content h2{
+        max-width: 254px;
+    }
+    /* квиз + таблица */
+    /* квиз + таблица */
+    .communication__inner {
+        padding: 0;
+    }
+    .communication__left {
+        padding-top: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .communication__left h2 {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .communication__link {
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .communication__img {
+        margin-top: 30px;
+    }
+    .stage h2 {
+        text-align: left;
+        font-size: 32px;
+        margin-bottom: 21px;
+    }
+    .stage__inner {
+        gap: 20px;
+    }
+    .stage__inner-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .stage__number {
+        font-size: 32px;
+        line-height: 23px;
+    }
+    .stage__phone {
+        margin-top: 0;
+    }
+    .stage__text p {
+        text-wrap-style: auto;
+        max-width: 312px;
+    }
+    .inventory h2 {
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .inventory__inner {
+        gap: 25px;
+    }
+    .inventory__inner-item img {
+        margin-bottom: 15px;
+    }
+    .consultation__title{
+        padding: 25px 25px 0px 25px;
+    }
+    .consultation__title h2 {
+        margin-top: 0;
+        text-wrap-style: auto;
+        text-align: center;
+        font-size: 20px;
+        line-height: normal;
+    }
+    .consultation__inner {
+        flex-wrap: wrap;
+    }
+    .consultation__form{
+        gap: 10px;
+    }
+    .consultation__form #name,
+    .consultation__form #phone,
+    .consultation__form button {
+        max-width: 262px;
+        width: -webkit-fill-available;
+    }
+    .consultation__title p {
+        display: none;
+    }
+    .consultation__img img {
+        width: 100%;
+    }
+    /* что входит в уборку+калькулятор+гордимся своими сотруниками+отзывы+выполненыве работы */
+
+
+    /* что входит в уборку+калькулятор+гордимся своими сотруниками+отзывы+выполненыве работы */
+    .faq h2 {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .faq .faq__inner-img:first-child {
+        display: none;
+    }
+    .faq__inner {
+        display: block;
+    }
+    .faq__inner-question{
+        margin-bottom: 50px;
+    }
+    .question-inner {
+        padding: 20px;
+    }
+    .question-content p {
+        padding-top: 10px;
+    }
+    .faq__inner-text {
+        margin-bottom: 20px;
+    }
+    .faq__inner-img:last-child img {
+        height: 160px;
+    }
+}
+
+
+
+
+
+/* Адаптив */
+
+
+
+/* Услуги уборки после ремонта */
+
+.title__services {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 58px;
+    margin-bottom: 15px;
+    max-width: 395px;
+}
+
+
+
+
+
+
+/* Услуги уборки после ремонта */
