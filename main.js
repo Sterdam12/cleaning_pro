@@ -30,3 +30,29 @@ document.addEventListener("DOMContentLoaded", function () {
  questionTitle.forEach(function(title){
     title.addEventListener('click', toggleQuestion)
  });
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.querySelector(".contact_modal");
+    const openBtn = document.querySelector("#button__contact__head");
+    const closeBtn = document.querySelector(".contact_modal__close");
+    
+    if (openBtn && modal) {
+        openBtn.addEventListener("click", function () {
+            modal.classList.add("active");
+        });
+    }
+    
+    if (closeBtn && modal) {
+        closeBtn.addEventListener("click", function () {
+            modal.classList.remove("active");
+        });
+    }
+    
+    // Закрытие модалки при клике вне её области
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.classList.remove("active");
+        }
+    });
+});
