@@ -58,10 +58,10 @@ h2 {
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 1280px;
+    
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 50px;
+    padding: 0px 10px;
 }
 
 header {
@@ -421,6 +421,7 @@ h2 .title_yellow {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .advantage__item {
@@ -449,7 +450,7 @@ h2 .title_yellow {
 
 .services__inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -710,7 +711,7 @@ tbody tr:nth-child(odd) {
 
 .inventory__inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -720,6 +721,7 @@ tbody tr:nth-child(odd) {
     margin-bottom: 20px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    height: 200px;
 }
 
 .inventory__inner-item p {
