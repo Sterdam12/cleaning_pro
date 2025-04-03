@@ -90,4 +90,10 @@
     .services__content {
         padding:40px 20px;
     }
+    .price_qwiz__right {
+        max-width: 550px;
+    }
+    .price_qwiz__right img {
+        height: 120px;
+    }
 }
