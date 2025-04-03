@@ -56,3 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const menuBtn = document.querySelector('.menu__btn');
+const menuClose = document.querySelector('.burger__menu-close');
+const burgerMenu = document.querySelector('.burger__menu');
+
+menuBtn.addEventListener('click', ()=>{
+    burgerMenu.classList.add('burger__menu-open');
+});
+
+menuClose.addEventListener('click', ()=>{
+    burgerMenu.classList.remove('burger__menu-open');
+});
