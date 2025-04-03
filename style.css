@@ -1890,7 +1890,9 @@ iframe {
     bottom: 20%;
     left: 47%;
 }
-
+.spot_item__list{
+    display: none;
+}
 .online_calc__container {
     padding-top: 40px;
     display: grid;
@@ -2712,7 +2714,43 @@ iframe {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 700px){ 
+@media screen and (max-width: 700px){
+    
+    /* Контейнер для кастомного скролла */
+    .price__scrollbar {
+        top: 0;
+        left: 0;
+        height: 2px;
+        background: #DADADA;
+        border-radius: 0;
+        overflow: hidden;
+        cursor: pointer;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    /* Ползунок */
+    .price__scrollbar-thumb {
+        height: 100%;
+        width: 95px;
+        background: #0D84D4;
+        border-radius: 0;
+        cursor: grab;
+    }
+    
+    .price__table {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-top: 20px;
+        padding-bottom: 1px;
+        overflow: visible;
+    }
+    .price__table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .price__table::-webkit-scrollbar {
+        display: none;
+    }
     .under__title {
         font-size: 32px;
     }
@@ -2733,8 +2771,6 @@ iframe {
     .slider__buttons {
         overflow-x: scroll;
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .slider__tab {
         min-width: fit-content;
@@ -2769,6 +2805,40 @@ iframe {
     }
     .faq__inner-text{
         padding-top: 30px;
+    }
+    .spot_item__list{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        margin-top: 15px;
+    }
+    .spot_item__list .spot_item {
+        display: flex;
+        position: relative;
+        border: 1px solid #DADADA;
+        width: fit-content;
+    }
+    .swiper-1 {
+        padding-bottom: 35px !important;
+    }
+    .tabs_slider__img {
+        box-shadow:none;
+    }
+    .slider__buttons {
+        justify-content: flex-start;
+        scrollbar-width: none;
+        padding-left: 1px;
+    }
+    .consultation__form #name {
+        width: 100%;
+        max-width: 100%;
+    }
+    .consultation__form {
+        flex-direction: column;
+    }
+    .consultation__form #phone{
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -2825,8 +2895,20 @@ iframe {
     .wrapper {
     padding: 0px 24px;
     }
+    .price__inner-title {
+        padding: 0 24px;
+    }
+    .price .wrapper {
+        padding: 0px;
+    }
     .header__inner{
         border-bottom: none;
+    }
+    .price__table-bottom {
+        padding: 0 24px;
+    }
+    .stage__inner {
+        grid-template-columns: 1fr;
     }
     .menu__list,
     .location,
@@ -3011,7 +3093,7 @@ iframe {
     }
     .stage__text p {
         text-wrap-style: auto;
-        max-width: 312px;
+        max-width: 100%;
     }
     .inventory h2 {
         font-size: 20px;
@@ -3039,12 +3121,6 @@ iframe {
     }
     .consultation__form{
         gap: 10px;
-    }
-    .consultation__form #name,
-    .consultation__form #phone,
-    .consultation__form button {
-        max-width: 262px;
-        width: -webkit-fill-available;
     }
     .consultation__title p {
         display: none;
@@ -3105,6 +3181,7 @@ iframe {
     .price_qwiz h2 {
         text-align: left;
         font-size: 32px;
+        margin: 0;
     }
     .price_qwiz__container {
         margin-top: 30px;
@@ -3127,6 +3204,8 @@ iframe {
     }
     .price__table {
         margin-bottom: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .price__table td {
         padding: 20px 0px 20px 20px;
@@ -3280,6 +3359,44 @@ iframe {
         padding-bottom: 50px;
     }
     
+    .inventory__inner-item p {
+        padding: 0;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .board .swiper-slide {
+        width: 216px; /* Минимальная ширина слайда */
+        max-width: 216px;
+    }
+      .board .swiper-button-next {
+        display: none;
+    }
+    .board .swiper-button-prev {
+        display: none;
+    }
+    .swiper-3 .swiper-slide {
+        width: 230px; /* Минимальная ширина слайда */
+        max-width: 230px;
+    }
+    .swiper-3 .swiper-button-next {
+        display: none;
+    }
+    .swiper-3 .swiper-button-prev {
+        display: none;
+    }
+    
+    .swiper-4 .swiper-button-next {
+        display: none;
+    }
+    .swiper-4 .swiper-button-prev {
+        display: none;
+    }
+    .reviews_block__item2 p {
+        padding: 0px 20px 20px 20px;
+    }
+    .question-title {
+        gap: 2px;
+    }
 }
     /* бургер */
 
