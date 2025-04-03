@@ -56,3 +56,59 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+/*Калькулятор стоимости*/
+document.addEventListener("DOMContentLoaded", function () {
+    const prices = {
+        cleaningType: {
+            "Поддерживающая": 70,
+            "Генеральная": 100,
+            "После ремонта": 120,
+            "Помыть окна": 200,
+        },
+        extraServices: {
+            "Помыть холодильник": 500,
+            "Химчистка мебели": 1000,
+            "Помыть СВЧ внутри": 500,
+            "Помыть духовой шкаф": 500,
+            "Уборка балкона": 500,
+            "Глажка белья": 500,
+            "Чистка ковра": 1000,
+            "Помыть люстру": 500,
+        },
+        minPrice: 3800
+    };
+
+    const getSelectedValue = (name) => {
+        return document.querySelector(`input[name="${name}"]:checked`)?.closest("label")?.textContent.trim();
+    };
+
+    const calculatePrice = () => {
+        const cleaningType = getSelectedValue("calc-option-2");
+        const area = parseInt(document.getElementById("areaInput2").value) || 30;
+
+        let pricePerM2 = prices.cleaningType[cleaningType] || 0;
+        let baseCost = pricePerM2 * area;
+
+        let extraCost = 0;
+        document.querySelectorAll(".online_calc_select input:checked").forEach((checkbox) => {
+            const serviceText = checkbox.closest("label").textContent.trim();
+            extraCost += prices.extraServices[serviceText] || 0;
+        });
+
+        let totalCost = baseCost + extraCost;
+        if (totalCost < prices.minPrice) {
+            totalCost = prices.minPrice;
+        }
+
+        document.querySelector(".online_calc__total span").textContent = ` ${totalCost.toLocaleString()} руб.`;
+    };
+
+    document.querySelectorAll('input[name="calc-option-2"], .online_calc_select input, #areaInput2, #areaSlider2').forEach(input => {
+        input.addEventListener("input", calculatePrice);
+    });
+
+    calculatePrice();
+});

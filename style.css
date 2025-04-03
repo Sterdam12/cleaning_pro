@@ -2913,7 +2913,7 @@ iframe {
         margin-top: 0;
     }
     .stage__text p {
-        text-wrap-style: auto;
+        text-wrap-style: balance;
         max-width: 312px;
     }
     .inventory h2 {
