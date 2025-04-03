@@ -3296,6 +3296,9 @@ iframe {
     .reviews_block__item2 p {
         padding: 0px 20px 20px 20px;
     }
+    .question-title {
+        gap: 2px;
+    }
 }
 
 
