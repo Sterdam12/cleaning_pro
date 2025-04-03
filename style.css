@@ -2813,6 +2813,17 @@ iframe {
         scrollbar-width: none;
         padding-left: 1px;
     }
+    .consultation__form #name {
+        width: 100%;
+        max-width: 100%;
+    }
+    .consultation__form {
+        flex-direction: column;
+    }
+    .consultation__form #phone{
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 
@@ -3013,12 +3024,6 @@ iframe {
     }
     .consultation__form{
         gap: 10px;
-    }
-    .consultation__form #name,
-    .consultation__form #phone,
-    .consultation__form button {
-        max-width: 262px;
-        width: -webkit-fill-available;
     }
     .consultation__title p {
         display: none;
