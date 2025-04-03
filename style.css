@@ -2675,6 +2675,21 @@ iframe {
 
 /* Услуги уборки после ремонта */
 
+.second_screen {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 153px;
+    padding-bottom: 76px;
+    position: relative;
+}
+
+.second_screen .wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+
 .title__services {
     font-weight: 700;
     font-size: 52px;
@@ -2683,9 +2698,170 @@ iframe {
     max-width: 395px;
 }
 
+.features h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.features__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    gap: 20px;
+}
 
+.features .features__inner:first-of-type {
+    margin-bottom: 20px;
+}
 
+.features__services {
+    padding: 20px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+}
 
+.features__services h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.features__list {
+    margin-bottom: 20px;
+}
+
+.features__list li:first-child {
+    margin-bottom: 5px;
+}
+
+.features__list-items{
+    position: relative;
+    padding-left: 16px;
+    color: #8A8A8A;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.features__list-items::before { 
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #0D84D4;
+    border-radius: 50%;
+    align-self: anchor-center;
+    left: 0;
+}
+
+.features__list-items span{
+    color: #2D2D2D;
+}
+
+.features__services-button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.features__services-button {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.features__services-btn {
+    max-width: fit-content;
+    padding: 16px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #F6B500;
+    border-radius: 10px;
+}
+
+.features .features__inner:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.features .features__inner:last-child .features__services {
+    min-width: 380px;
+}
+
+.cleaning__service {
+    padding-top: 80px;
+    padding-bottom: 107px;
+}
+
+.cleaning__service h2{
+    max-width: 483px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cleaning__service-info {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.cleaning__service-inner {
+    position: relative;
+}
+
+.cleaning__service-inner::after {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -32px;
+    height: 2px;
+    background-color: #0D84D4;
+    z-index: -1;
+}
+
+.cleaning__service-info-img {
+    position: relative;
+}
+
+.cleaning__service-info  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 120px;
+}
+
+.circle-orange {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #F6B500;
+    border-radius: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 25px;
+}
+
+.circle-white {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.cleaning__service-info-img p{
+    margin-top: 47px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+}
 
 /* Услуги уборки после ремонта */
