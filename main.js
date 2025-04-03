@@ -112,3 +112,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     calculatePrice();
 });
+
+
+/*Кастомной скролл бар*/
+document.addEventListener("DOMContentLoaded", function () {
+    const tableWrapper = document.querySelector(".price__table");
+    const scrollbar = document.querySelector(".price__scrollbar");
+    const thumb = document.querySelector(".price__scrollbar-thumb");
+
+    function syncThumb() {
+        let scrollPercent = tableWrapper.scrollLeft / (tableWrapper.scrollWidth - tableWrapper.clientWidth);
+        let thumbPosition = scrollPercent * (scrollbar.clientWidth - thumb.clientWidth);
+        thumb.style.transform = `translateX(${thumbPosition}px)`;
+    }
+
+    tableWrapper.addEventListener("scroll", syncThumb);
+});
