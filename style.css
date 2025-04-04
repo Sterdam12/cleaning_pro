@@ -117,7 +117,16 @@ header {
 }
 
 .contact__inner {
-    gap: 35px;
+    gap: 46.78px;
+}
+
+.svg__contact {
+    gap: 18px;
+}
+
+.svg__contact img{
+    width: 18px;
+    height: 18px;
 }
 
 .menu__btn {
@@ -1224,26 +1233,21 @@ tbody tr:nth-child(odd) {
     gap: 10px;
 }
 
-.provekra {
-    display: flex;
-    gap: 70px;
-}
-
 .cellar__info {
     max-width: 170px;
 }
 
-.cellar__info h6,
+.cellar__info img {
+    margin-bottom: 24px;
+}
+
 .cellar__info p {
     color: #8A8A8A;
     font-weight: 400;
     font-size: 10px;
+    line-height: 12.352px;
 }
 
-.provekra2 {
-    display: flex;
-    gap: 51px;
-}
 
 .menu__cellar {
     display: flex;
@@ -1254,6 +1258,11 @@ tbody tr:nth-child(odd) {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    line-height: 10px;
+}
+
+.menu__cellar-inner ul:first-of-type {
+    margin-bottom: 30px;
 }
 
 .menu__cellar-inner h4 {
@@ -1261,6 +1270,15 @@ tbody tr:nth-child(odd) {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 20px;
+    line-height: 10px;
+}
+
+.menu__footer > li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.menu__footer-item {
+    line-height: 9px;
 }
 
 .menu__footer_link {
@@ -1268,7 +1286,6 @@ tbody tr:nth-child(odd) {
     color: #fff;
     font-size: 12px;
     display: inline-block;
-    margin-bottom: 15px;
 }
 
 .menu__contact {
@@ -1292,12 +1309,16 @@ tbody tr:nth-child(odd) {
     max-width: 277px;
 }
 
+.time__interval {
+    max-width: 145px;
+    margin-bottom: 20px;
+}
+
 .cellar__contact p {
     color: #fff;
     font-weight: 400;
     font-size: 12px;
     text-align: right;
-    margin-bottom: 20px;
 }
 
 .mail {
@@ -1305,7 +1326,8 @@ tbody tr:nth-child(odd) {
     font-weight: 400;
     font-size: 14px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 28.28px;
+    line-height: 10px;
 }
 
 .location__footer {
@@ -1327,6 +1349,7 @@ tbody tr:nth-child(odd) {
 
 .location__footer p {
     margin: 0;
+    line-height: 18px;
 }
 
 .privacy a {
@@ -2112,7 +2135,7 @@ iframe {
 }
 
 footer .svg__contact {
-    margin-bottom: 30px;
+    margin-bottom: 29.72px;
     display: flex;
     gap: 17px;
 }
@@ -3029,7 +3052,10 @@ footer .svg__contact {
         align-items: center;
     }
 
-    .cellar__info h6,
+    .cellar__info img {
+        margin-bottom: 0;
+    }
+
     .cellar__info p {
         display: none;
     }
@@ -3081,10 +3107,12 @@ footer .svg__contact {
 
     .privacy p {
         display: block;
+        margin-top: 15px;
     }
 
     .privacy__link {
         text-align: center;
+        line-height: 9px;
     }
 
     .privacy .privacy__link:last-child a {
@@ -3184,6 +3212,10 @@ footer .svg__contact {
         border-bottom: none;
     }
 
+    .svg__contact {
+        display: flex;
+    }
+
     .price__table-bottom {
         padding: 0 24px;
     }
@@ -3200,7 +3232,7 @@ footer .svg__contact {
     }
 
     .contact__inner {
-        gap: 40px;
+        gap: 43px;
     }
 
     /* вернуть в бургер меню */
