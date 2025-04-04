@@ -57,17 +57,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const menuBtn = document.querySelector('.menu__btn');
-const menuClose = document.querySelector('.burger__menu-close');
-const burgerMenu = document.querySelector('.burger__menu');
 
-menuBtn.addEventListener('click', ()=>{
-    burgerMenu.classList.add('burger__menu-open');
+/*Меню мобильное */
+$(document).ready(function() {
+    const $sideMenu = $('.burger__menu_side');
+    const $closeButton = $('.burger__menu-close');
+    const $openButton = $('.burger_menu_btn');
+
+    function openMenu() {
+        $sideMenu.addClass('th-body-visible');
+        $('body').css('overflow', 'hidden'); // Отключаем скролл
+    }
+
+    function closeMenu() {
+        $sideMenu.removeClass('th-body-visible');
+        $('body').css('overflow', ''); // Возвращаем скролл
+    }
+
+    $openButton.on('click', function(event) {
+        event.stopPropagation();
+        openMenu();
+    });
+
+    $closeButton.on('click', function(event) {
+        event.stopPropagation();
+        closeMenu();
+    });
 });
 
-menuClose.addEventListener('click', ()=>{
-    burgerMenu.classList.remove('burger__menu-open');
-});
 
 
 /*Калькулятор стоимости*/
@@ -139,3 +156,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tableWrapper.addEventListener("scroll", syncThumb);
 });
+
+
+/*Grid=>Slider*/
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".our_work__container");
+    const pagination = document.querySelector(".pagination_modiled");
+    const slides = document.querySelectorAll(".our_work__item");
+
+    // Создаём буллеты для пагинации
+    slides.forEach((_, i) => {
+        const bullet = document.createElement("span");
+        if (i === 0) bullet.classList.add("active"); // Первый активный
+        pagination.appendChild(bullet);
+    });
+
+    const bullets = document.querySelectorAll(".pagination_modiled span");
+
+    // Функция обновления активного буллета
+    function updatePagination() {
+        let index = Math.round(slider.scrollLeft / slider.clientWidth);
+        bullets.forEach((bullet, i) => {
+            bullet.classList.toggle("active", i === index);
+        });
+    }
+
+    // Отслеживаем скролл и обновляем буллеты
+    slider.addEventListener("scroll", () => {
+        requestAnimationFrame(updatePagination);
+    });
+
+    // Клик на буллет — прокрутка к нужному слайду
+    bullets.forEach((bullet, i) => {
+        bullet.addEventListener("click", () => {
+            slider.scrollTo({
+                left: i * slider.clientWidth,
+                behavior: "smooth"
+            });
+        });
+    });
+});
+
