@@ -2940,6 +2940,7 @@ iframe {
         left: 0;
         padding: 18px 24px 0px 24px;
         transition: transform .7s ease;
+        z-index: 100;
     }
     .burger__menu.burger__menu-open {
         transform: translateY(0%);
